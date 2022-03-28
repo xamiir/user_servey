@@ -4,13 +4,16 @@ import Card from './UI/Card'
 import User from './User'
 import styles from './Userlist.module.css'
 
-const UserList = (prpos) => {
+const UserList = (props) => {
+
+  
   return (
     <div className={styles.userList}>
         <Card>
-           {prpos.users.map((user)=>{
+           {props.users.map((user)=>{
                return(
               <User key={user.id} user={user}
+              deletePerson={props.onDelete}
               />
                )
            })}

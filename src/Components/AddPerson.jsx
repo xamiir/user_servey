@@ -49,6 +49,10 @@ const AddPerson=(props) =>{
   }
   props.onAddPerson(data)
 
+  setFullName('')
+  setEmail('')
+  setAge('')
+  setUsername('')
     
   }
 
